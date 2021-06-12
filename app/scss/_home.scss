@@ -1,0 +1,133 @@
+section#home{
+    position: relative;
+    margin-top: 32px;
+    
+    .wrapper__home{
+        display: flex;
+        width: 100%;
+
+        .left__wrapper__home{
+            width: 50%;
+
+        .content__left__wrapper__home{
+
+            width: 378px;
+            height: 313px;
+            margin-top: 179px;
+
+            h3.h32_48{
+                font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #292E39;
+margin-bottom: 30px;
+            }
+
+            p.p16_28{
+                font-family: 'Raleway';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0.02em;
+color: #787E90;
+margin-bottom: 12px;
+            }
+
+            .span{
+                margin-bottom: 40px;
+
+                span.new{
+                    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+color: #292E39;
+margin-right: 10px;
+
+                }
+                span.old{
+                    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 32px;
+text-decoration-line: line-through;
+color: #787E90;
+
+                }
+            }
+            button.button_Z{
+                
+                a{
+
+                }
+            }
+        }
+    }
+
+    .right__wrapper__home{
+            width: 50%;
+
+.content__right__wrapper__home{
+    position: relative;
+    height: 607px;
+    width: 100%;
+
+img{
+
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+.sale{
+
+    span.date{
+  
+    }
+
+    span.percent{
+   
+    }
+}
+
+.navigation{
+
+  span.counter{
+ 
+  }  
+
+  .buttonLeft{
+      img{
+
+      }
+  }
+  .buttonRight{
+      img{
+
+      }
+  }
+}
+        }
+    }
+}
+}
+
+    img.blur__left{
+        
+      
+            }
+
+  .buttonLeft:hover{
+      img{
+          filter: invert(1);
+      }
+  }
+  .buttonRight:hover{
+      img{
+        filter: invert(1);
+      }
+  }
+
+          

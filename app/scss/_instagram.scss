@@ -1,0 +1,41 @@
+section#instagram{
+    width: 100%;
+
+    .wrapper__content{
+        display: flex;
+        justify-content: space-between;
+
+.abonements__block {
+    width: 332px;
+    height: 107px;
+
+.h20_32 {
+}
+
+.p16_28 {
+}
+}
+button.button_Z{
+    margin-top: 75px;
+}
+    }
+
+    .gallery__instagram {
+        display: flex;
+
+    .images__instagram {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img{
+            width: 384px;
+            height: 395px;
+        }
+    }
+}
+}
+
+.images__instagram img:nth-child(2){
+    margin: 0 33px;
+}
