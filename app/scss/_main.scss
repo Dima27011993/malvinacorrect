@@ -9,3 +9,44 @@ body{
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+/* основа кнопки вверх */
+.scroll_top {
+    position: fixed; /* фиксированное положение */
+    bottom: -50px; /* расстояние от нижнего края */
+    right: 20px; /* расстояние от правого края */
+    width: 50px; /* ширина */
+    height: 50px; /* высота */
+    border: none; /* без рамки */
+    border-radius: 50%; /* фигура круга */
+    background: #5e5a5a3b;/* цвет фона */
+    z-index: 100; /* поверх остальных элементов */
+    outline: none; /* без внешней обводки */
+    cursor: pointer;/* курсор рука */
+    transition: 0.4s; /* плавное движение */
+}
+
+
+/* стрелочка внутри кнопки вверх */
+.scroll_top:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff; /* верхняя рамка */
+      border-left: 2px solid #fff; /* левая рамка */
+    transform: rotate(45deg); /* поворот */
+    position: absolute; /* положение относительно круга */
+    top: 7px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /* выравнивание по центру */
+}
+ /* кнопка появится */
+ .scroll_top.active {
+    bottom: 20px;
+}
+.scroll_top:active:hover {
+transform: rotate(360deg);
+}
+
