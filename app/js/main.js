@@ -22,5 +22,14 @@ $('#burger').on('click',function(e){
     e.preventDefault();
     $('.ul__navbar_centerContent').toggleClass('show');
 });
+if($(window).width() < 865){
+
+$('.header .navbar ul.ul__navbar_centerContent a').on('click',function(e){
+    e.preventDefault();
+    $('.header .navbar ul.ul__navbar_centerContent').toggleClass('show');
+});
+
+};
+
 
 

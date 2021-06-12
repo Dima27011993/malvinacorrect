@@ -48,16 +48,9 @@ header{
             display: flex;
             align-items: center;
 
-            li.menu_ul__navbar{
-                img.sale__navbar{
-                    width: 15px;
-                    height: 15px;
-                    margin-right: 8px;
-                }
-
-                a{
-                    text-decoration: none;
-                    margin-right: 32px;
+            a{
+                text-decoration: none;
+                margin-right: 32px;
 box-sizing: border-box;
 font-style: normal;
 font-weight: 600;
@@ -67,12 +60,18 @@ text-transform: uppercase;
 color: #292E39;
 
 img.vector{
-    width: 6px;
-    height: 5px;
-    margin-left: 10px;
-    margin-bottom: 3px;
+width: 6px;
+height: 5px;
+margin-left: 10px;
+margin-bottom: 3px;
 }
+            }
 
+            li.menu_ul__navbar{
+                img.sale__navbar{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 8px;
                 }
             }
         }

@@ -36,9 +36,7 @@
     section#order .wrapper__flex .right__order form.form{
         flex-direction: column;
     }
-    .header .navbar #burger{
-        display: block;
-    }
+   
     .header .navbar{
         justify-content: space-between;
     }
@@ -107,6 +105,28 @@ section#order .wrapper__flex .right__order {
     .header .navbar ul.ul__navbar_centerContent,
     .header .navbar ul.ul__navbar_rightContent{
         display: none;
+    }
+    .header .navbar #burger{
+        display: block;
+    }
+
+    .show, .header .navbar ul.ul__navbar_centerContent.show, .header .navbar ul.ul__navbar_rightContent.show{
+        position: absolute;
+        top: 47px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.89);
+        z-index: 10;
+        // padding: 20px;
+
+    }
+    .header .navbar ul.ul__navbar_centerContent li.menu_ul__navbar a{
+        color:#fff;
+    }
+    li.menu_ul__navbar{
+        padding: 20px;
     }
 }
 
