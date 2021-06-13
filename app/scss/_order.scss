@@ -68,14 +68,25 @@ box-sizing: border-box;
 margin-bottom: 10px;
 
     img{
-        width: 12px;
-        height: 9px;
+        // width: 12px;
+        // height: 9px;
 
     }
 }
 .text {
-.p14_24 {
-}
+    display: flex;
+    section#order .wrapper__flex .right__order .propertiespopup .wrapper__image__text .text input{
+        
+    }
+
+        img{
+            position: absolute;
+            display: flex;
+        }
+
+    }
+// .p14_24 {
+// }
 }
 
 }
@@ -101,7 +112,7 @@ textarea{
 }
 }
 } 
-}
+
 
 
 .left__content__order input::placeholder{
