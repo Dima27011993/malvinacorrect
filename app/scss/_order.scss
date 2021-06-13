@@ -14,12 +14,12 @@ section#order{
 }
 
 .right__order {
-    width: 46%;
+    width: 50%;
 
     form.form{
         display: flex;
         justify-content: space-between;
-        width: 108%;
+        width: 100%;
 
 
     .left__content__order,
@@ -44,14 +44,54 @@ box-sizing: border-box;
     }
 }
 }
+.propertiespopup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+
+.wrapper__image__text {
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 48px;
+
+.image__properties {
+    width: 44px;
+    height: 24px;
+    background: #F8F9FA;
+border-radius: 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 25px;
+box-sizing: border-box;
+margin-bottom: 10px;
+
+    img{
+        width: 12px;
+        height: 9px;
+
+    }
 }
+.text {
+.p14_24 {
+}
+}
+
+}
+
+.button_Z {
+}
+}
+}
+
 
 .form__Textarea {
 .p12_20 {
 }
 
 textarea{
-    width: 107%;
+    width: 100%;
     min-height: 102px;
     background-color: #F8F9FA;
     border: none;

@@ -12,37 +12,37 @@ body{
 
 /* основа кнопки вверх */
 .scroll_top {
-    position: fixed; /* фиксированное положение */
-    bottom: -50px; /* расстояние от нижнего края */
-    right: 20px; /* расстояние от правого края */
-    width: 50px; /* ширина */
-    height: 50px; /* высота */
-    border: none; /* без рамки */
-    border-radius: 50%; /* фигура круга */
-    background: #5e5a5a3b;/* цвет фона */
-    z-index: 100; /* поверх остальных элементов */
-    outline: none; /* без внешней обводки */
-    cursor: pointer;/* курсор рука */
-    transition: 0.4s; /* плавное движение */
+    position: fixed; 
+    bottom: -50px;
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+    border-radius: 50%; 
+    background: #5e5a5a3b;
+    z-index: 100; 
+    outline: none; 
+    cursor: pointer;
+    transition: 0.4s; 
 }
 
 
-/* стрелочка внутри кнопки вверх */
+
 .scroll_top:after {
     content: "";
     width: 12px;
     height: 12px;
-    border-top: 2px solid #fff; /* верхняя рамка */
-      border-left: 2px solid #fff; /* левая рамка */
-    transform: rotate(45deg); /* поворот */
-    position: absolute; /* положение относительно круга */
+    border-top: 2px solid #fff; 
+      border-left: 2px solid #fff; 
+    transform: rotate(45deg); 
+    position: absolute; 
     top: 7px;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto; /* выравнивание по центру */
+    margin: auto; 
 }
- /* кнопка появится */
+//проявление кнопки 
  .scroll_top.active {
     bottom: 20px;
 }
