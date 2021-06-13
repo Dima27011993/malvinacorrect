@@ -32,7 +32,6 @@ $('.header .navbar ul.ul__navbar_centerContent a').on('click',function(e){
 
 };
 
-$(document).ready(function() {
     $("a.scrollto").click(function() {
       var elementClick = $(this).attr("href")
       var destination = $(elementClick).offset().top;
@@ -41,7 +40,6 @@ $(document).ready(function() {
       }, 800);
       return false;
     });
-  });
 
   $('.scroll_top').click(function(){
     $('html, body').animate({scrollTop: 0}, 1000);
