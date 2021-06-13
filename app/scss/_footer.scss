@@ -47,7 +47,7 @@ a{
        .p13_24{
 margin-bottom: 54px;
        }
-       
+
    } 
    p.p14_24xs{
        margin-bottom: 16px;
@@ -61,4 +61,36 @@ margin-bottom: 54px;
 }
 }
 }
+.footer__text__logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+
+.left__footer__text__logo {
+.p12_20 {
+    text-transform: uppercase;
+}
+}
+
+.right__footer__text__logo {
+    display: flex;
+    p.p12_20{
+        margin-right: 16px;
+        text-transform: uppercase;
+    }
+    
+.vector_footer {
+    display: flex;
+    align-items: center;
+
+    img{
+
+    }
+}
+}
+}
+
+
+
+
 }
