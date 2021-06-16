@@ -1,4 +1,6 @@
 
+
+
 $('a.modal-btn').on('click',function(e){
     e.preventDefault();
     let destination = $(this).attr('href');
@@ -53,6 +55,7 @@ $('.header .navbar ul.ul__navbar_centerContent a').on('click',function(e){
             $('.scroll_top').removeClass('active');
         }
     });
+
 
 
 
