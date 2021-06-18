@@ -130,6 +130,92 @@ servicesJS.forEach(item =>{
 </div>
 
 `)
+});
+
+instagrammJS = [
+    {
+imagesInstagram: 'images/instagram/1.jpg',
+    },
+    {
+imagesInstagram: 'images/instagram/2.jpg',
+    },
+    {
+imagesInstagram: 'images/instagram/3.jpg',
+    }
+]
+
+instagrammJS.forEach(item =>{
+    $('.gallery__instagram').append(`
+
+    <div class="images__instagram">
+    <img src="${item.imagesInstagram}" alt="">
+</div>
+    `)
+});
+
+advantagesJS = [
+    {
+        imagesAdv: 'images/advantages/1.svg',
+discription:'Инновационная методика'
+
+
+
+},
+    {
+        imagesAdv: 'images/advantages/2.svg',
+discription:'Авторская техника удаления волос'
+
+
+},
+    {
+        imagesAdv: 'images/advantages/3.svg',
+        discription:' Врачи<br> дерматологи'
+
+},
+    {
+        imagesAdv: 'images/advantages/4.svg',
+        discription:'Новое оборудование (2018 года) '
+
+},
+    {
+        imagesAdv: 'images/advantages/5.svg',
+        discription:'Стойкий результат после 1 процедуры'
+
+},
+    {
+        imagesAdv: 'images/advantages/6.svg',
+        discription:'Удаление волос на любом фототипе кожи'
+
+},
+    {
+        imagesAdv: 'images/advantages/7.svg',
+        discription:'Обработка всего тела за рекордноe время'
+
+},
+    {
+        imagesAdv: 'images/advantages/8.svg',
+        discription:'Фиксированная стоимость курса'
+
+
+},
+
+]
+
+advantagesJS.forEach(item => {
+$('.wrapper__advantages_block').append(`
+
+<div class="block__advantages">
+<div class="logo__advantages">
+<img src="${item.imagesAdv}" alt="">
+</div>
+<div class="text__advantages">
+    <p class="p16_28" >
+        ${item.discription}
+    </p>
+</div>
+</div>
+`)
+
 })
 
 
