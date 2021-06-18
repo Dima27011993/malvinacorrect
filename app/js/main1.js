@@ -216,8 +216,52 @@ $('.wrapper__advantages_block').append(`
 </div>
 `)
 
-})
+});
 
+
+// questionsJS = [
+//     {
+//         discription: 'Как подготовиться к эпиляции?'
+//     },
+//     {
+//         discription: 'Безопасна ли лазерная эпиляция??'
+//     },
+//     {
+//         discription: 'Безопасна ли лазерная эпиляция'
+//     },
+//     {
+//         discription: 'Возможны ли побочные эффекты?'
+//     },
+//     {
+//         discription: 'Лазерная эпиляция — больно ли это?'
+//     },
+//     {
+//         discription: 'Сколько нужно процедур лазерной эпиляции, чтобы избавиться от волос полностью?'
+//     },
+//     {
+//         discription: 'Как ухаживать за кожей после эпиляции?'
+//     },
+//     {
+//         discription: 'Когда нужно проводить повторный сеанс лазерной эпиляции?'
+//     },
+//     {
+//         discription: 'Как можно удалять волосы между сеансами лазерной эпиляции?'
+//     }
+  
+// ]
+
+// questionsJS.forEach(item => {
+//     $('.questions').append(`
+//     <p class="p16_28">
+// ${item.discription}
+// </p>
+// <div class="image__vect_questions">
+// <a href="#">
+//     <img src="images/questions/Vector.svg" class="vector_questions">
+// </a>
+// </div>
+//     `)
+// })
 
 
 
