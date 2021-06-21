@@ -13,6 +13,7 @@ font-weight: normal;
 font-size: 12px;
 line-height: 20px;
 color: #787E90;
+margin: 0;
 }
 
 p.p13_24{
@@ -75,7 +76,42 @@ h4.h20_32{
 .abonements__block{
     margin-bottom: 74px;
 }
+//блок текст H and P
 
+.abonements__block_comp{
+    margin-bottom: 74px;
+    h4.h20_32{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #292E39;
+        margin-bottom: 28px;
+    }
+
+    p.p16_28{
+        width: 357px;
+        height: 46px;
+    }
+}
+
+
+
+// блок Фото и описание 
+
+
+.gallery__instagram_comp {
+
+.images__instagram {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    img{
+    }
+}
+}
 //кнопка
 
 button.button_Z{
