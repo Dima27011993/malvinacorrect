@@ -132,7 +132,18 @@ section#order .wrapper__flex .right__order {
         display: flex;
     flex-wrap: wrap;
     }
+
+    section#instagram .gallery__instagram{
+        flex-wrap: wrap;
+    }
+    section#instagram .gallery__instagram:nth-child(3){
+display: none;
+    }
+
+
+    section#instagram .gallery__instagram .images__instagram:nth-child(2),
+    section#instagram .gallery__instagram .images__instagram:nth-child(3){
+display: none;
 }
-
-
+}
 //hello
