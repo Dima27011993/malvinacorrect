@@ -8,15 +8,17 @@ section#staff{
 
     .gallery__instagram_comp {
         display: flex;
+        justify-content: space-between;
 
     .images__instagram {
+        display: flex;
+        flex-direction: column;
+
         img{
             width: 288px;
             height: 288px;
-            margin-right: 32px;
 
         }
-    }
     .text__images {
         display: flex;
         flex-direction: column;
@@ -36,6 +38,8 @@ margin-top: 19px;
 
     }
 }
+}
+
 }
 
 

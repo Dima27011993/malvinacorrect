@@ -6,6 +6,15 @@
         flex-wrap: wrap;
     justify-content: space-between;
     }
+
+    section#staff .gallery__instagram_comp{
+        flex-wrap: wrap;
+    }
+
+    section#staff .gallery__instagram_comp .images__instagram {
+    margin-bottom: 10px;
+    }
+    
 }
 
 
@@ -90,7 +99,7 @@ section#order .wrapper__flex .right__order {
         margin-right: 16px;
     }
 
-    
+
 }
 
 @media(max-width:580px){
