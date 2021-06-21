@@ -140,7 +140,7 @@ imagesInstagram: 'images/instagram/1.jpg',
 imagesInstagram: 'images/instagram/2.jpg',
     },
     {
-imagesInstagram: 'images/instagram/3.jpg',
+imagesInstagram: 'images/instagram/3.jpg'
     }
 ]
 
@@ -217,51 +217,93 @@ $('.wrapper__advantages_block').append(`
 `)
 
 });
+instagramJS = 
+[
+    {
+        image: 'images/staff/1.jpg',
+        disctiption: 'Косметолог-эстетист',
+        person:'Маргарита Руслановна'
+
+},
+    {
+        image: 'images/staff/2.jpg',
+        disctiption: 'Специалист лазерной эпиляции',
+        person:'Юлия Константиновна'
+
+},
+    {
+        image: 'images/staff/3.jpg',
+        disctiption: 'Специалист лазерной эпиляции',
+        person:'Оксана Радифовна'
+
+},
+    {
+        image: 'images/staff/4.jpg',
+        disctiption: 'Специалист лазерной эпиляции',
+        person:'Надежда Яковлевна'
+
+}
+];
+
+instagramJS.forEach(item => {
+    $('.gallery__instagram_comp').append(`
+    <div class="images__instagram">
+    <img src=${item.image}>
+    <div class="text__images">
+    <p class="p12_20">${item.disctiption}</p>
+    <p class="p16_28">${item.person}</p>
+    </div>
+</div>
+    `)
+});
 
 
 // questionsJS = [
 //     {
-//         discription: 'Как подготовиться к эпиляции?'
+// text:'Как подготовиться к эпиляции'
 //     },
 //     {
-//         discription: 'Безопасна ли лазерная эпиляция??'
-//     },
-//     {
-//         discription: 'Безопасна ли лазерная эпиляция'
-//     },
-//     {
-//         discription: 'Возможны ли побочные эффекты?'
-//     },
-//     {
-//         discription: 'Лазерная эпиляция — больно ли это?'
-//     },
-//     {
-//         discription: 'Сколько нужно процедур лазерной эпиляции, чтобы избавиться от волос полностью?'
-//     },
-//     {
-//         discription: 'Как ухаживать за кожей после эпиляции?'
-//     },
-//     {
-//         discription: 'Когда нужно проводить повторный сеанс лазерной эпиляции?'
-//     },
-//     {
-//         discription: 'Как можно удалять волосы между сеансами лазерной эпиляции?'
+// text:'Безопасна ли лазерная эпиляция?'
 //     }
-  
+//     {
+// text:'Возможны ли побочные эффекты?'
+//     },
+//     {
+// text:'Лазерная эпиляция — больно ли это?'
+//     },
+//     {
+// text:'Сколько нужно процедур лазерной эпиляции, чтобы избавиться от волос полностью'
+//     },
+//     {
+// text:'Как ухаживать за кожей после эпиляции?'
+//     },
+//     {
+// text:'Когда нужно проводить повторный сеанс лазерной эпиляции?'
+//     },
+//     {
+// text:'Как можно удалять волосы между сеансами лазерной эпиляции?'
+//     },
+//     {
+// text:'Почему не удается удалить все волосы за раз?'
+//     }
 // ]
 
 // questionsJS.forEach(item => {
 //     $('.questions').append(`
 //     <p class="p16_28">
-// ${item.discription}
+//     ${item.text}
 // </p>
 // <div class="image__vect_questions">
 // <a href="#">
 //     <img src="images/questions/Vector.svg" class="vector_questions">
 // </a>
 // </div>
+
 //     `)
 // })
+
+
+
 
 
 
