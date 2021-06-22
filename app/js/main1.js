@@ -258,6 +258,28 @@ instagramJS.forEach(item => {
 });
 
 
+
+
+
+// myEvesomeArray.some(test => {
+//     if(test === 'd'){
+//         return test
+//     }
+// })
+
+// but we use more short version
+// myEvesomeArray.some(test => test === 'd')
+
+
+// myEvesomeArray.some(test =>{
+//     if( test === 'd'){
+//         return test
+//     }
+// })
+// but we use more short version 
+// myEvesomeArray.some(test => test === 'd')
+
+
 // questionsJS = [
 //     {
 // text:'Как подготовиться к эпиляции'
@@ -303,8 +325,139 @@ instagramJS.forEach(item => {
 // })
 
 
+// метод some() проверяет если хоть 1 елемент совпадает с проверяемой функцией
+// myEvesomeArray.some(test => test === 'd')
+// myEvesomeArray.some(test =>{
+//     if(test === 'd'){
+//         return test
+//     }
+// })
+
+// const myEvesomeArray = ['a','b','c','d','e'];
+// myEvesomeArray.some(test => test === 'd');
+// myEvesomeTest.some(test =>{
+//     if( test === 'd'){
+//         return test
+//     } 
+// })
+// reduce принимает аккумулятор и значение чтобы в результате вернуть только 1 значение 
+// const myEvesomeArray = ['1','2','3','4','5']
+// myEvesomeArray.reduce((accum, value) => accum * value)
+/* метод every() этот метод проверяет удовлетворяют ли вс элементи массива заданой 
+функции true если все элементы массива удовлетворяют элементам массива*/
+
+// const myEvesomeArray = ['a','b','c','d','e']
+// myEvesomeArray.every(test => test === 'd')
+// myEvesomeArray.every(test => {
+//     if(test === 'd'){
+//         return test
+//     }
+// })
+
+// myEvesomeArray = ['d','d','d','d','d']
+// myEvesomeArray.every(test => test === 'd')
+// myEvesomeArray.every(test => {
+//     if(test === 'd'){
+//         return test 
+//     }
+// })
+// метод map принмает функцию в качестве параметра ,и всегда возвращает одинаковое количество элементов
+// const myEvesomeArray = [5,4,3,2,1]
+// myEvesomeArray.map(item => item * item)
+// myEvesomeArray.map( item => {
+//     if( item * item ){
+//         return item
+//     }
+// })
+// const myEvesomeArray = [5,4,3,2,1]
+// myEvesomeArray.map( x => x * x)
+// myEvesomeArray.map( x => {
+//     if( x * x ){
+//         return x
+//     }
+// })
+//метод flat принимает функцию сглаживания масивов в массив и делает из 2 вложеных массивов 1 массив
+// const myEvesomeArray = [[1,2],[3,4],5]
+// console.log(myEvesomeArray.flat())
+// myEvesomeArray = [[1,2],[3,4],5]
+// myEvesomeArray.flat()
+// console.log(myEvesomeArray.flat())
+// метод filter принимает функцию в качестве параметра и возвращает елементы массива для которого 
+//были фильтрации и возвращает со значение true
+
+// const myEvesomeArray = [
+//     { id :1, name : 'John'},
+//     { id:2, name: 'Ali'},
+//     {id:3, name: 'Mass'},
+//     {id:4, name: 'Mass'}
+// ]
+// myEvesomeArray.filter(item => item.name === 'Mass')
+// myEvesomeArray.filter(item =>{
+//     if(item === 'Mass'){
+//         return item
+//     }
+// })
+// const myEvesomeArray = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Ali'},
+//     {id: 3,name: 'Mass'},
+//     {id: 4, name: 'Mass'}
+// ]
+//  myEvesomeArray.filter(item => item.name === 'Mass')
+//  myEvesomeArray.filter(item =>{
+//      if(item.name === 'Mass'){
+//          return item
+//      }
+
+//  })
 
 
+//метод forEach это колбек функция  этот метод принимает функцию к каждому элементу массива
+// const myEvesomeArray = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Ali'},
+//     {id: 3,name: 'Mass'}
+// ]
+
+// myEvesomeArray.forEach(elem => console.log(elem.name))
+// если удовлетворяет то напишет что это второй элемент , если не удовлетворяет то напишет -1
+// myEvesomeArray.findIndex(elem => elem.id === 3)
+// myEvesomeArray.findIndex(elem => elem.id === 7)
+
+// myEvesomeArray.findIndex(elem => elem.id === 3)
+
+// myEvesomeArray.find(elem => elem.id === 3)
+
+//метод sort этот метод принимает функцию в качестве параметра , сортирует и возвращает их 
+
+// const myEvesomeArray = [5, 4, 3, 2, 1]
+// // myEvesomeArray.sort((a, b) => a - b)
+// // console.log(myEvesomeArray.sort())
+// myEvesomeArray.sort((a, b) => b - a)
+// console.log(myEvesomeArray.sort())
+// const myEvesomeArray = [5,4,3,2,1]
+// myEvesomeArray.sort((a, b) => b - a )
+// console.log(myEvesomeArray.sort())
+
+// const myEvesomeArray = [1,2,3,4,5]
+// const myEvesomeArray2 = [10,20,30,40,50]
+// myEvesomeArray.concat(myEvesomeArray2)
+
+// const myEvesomeArray = [1, 2, 3, 4, 5]
+// myEvesomeArray.includes(3)
+// console.log(myEvesomeArray.includes(3))
 
 
+// const myEvesomeArray = ['e','d','c','b','a']
+// myEvesomeArray.reverse()
+// console.log(myEvesomeArray)
 
+// метод flatmap убирает из массива [] и добавляет метод map (elem => elem * 10)
+// const myEvesomeArray = [[1],[2],[3],[4],[5]]
+// myEvesomeArray.flatMap(arr=> arr * 10)
+// myEvesomeElem.flat().map(elem => elem * 10)
+// myEvesomeArray.flat().map(elem => {
+//     if(elem * 10){
+//         return elem
+//     }
+// })
