@@ -10,18 +10,8 @@ section#questions{
 }
 
 .questions{
-    display: flex;
-    justify-content: space-between;
-    background-color: #F8F9FA;
-    padding: 0 20px 0 24px;
-    box-sizing: border-box;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 24px;
-    border-radius: 2px;
 
     p.p16_28{
-        color: #292E39;
     }
     .image__vect_questions{
         a{
@@ -30,12 +20,7 @@ section#questions{
 }
 }
 
-&:hover, 
-p.p16_28:hover{
-    background-color: #DB0A5B;
-    color:#fff;
 
-}
 }
 }
 }

@@ -461,3 +461,100 @@ instagramJS.forEach(item => {
 //         return elem
 //     }
 // })
+
+//   const myEvesomeArray = ['a','b','c','d','e']
+//   myEvesomeArray.some(item => item === 'd')
+//   myEvesomeArray.some(test => {
+//       if( test === 'd'){
+//           return test
+//       }
+//   })
+
+// const myEvesomeArray = [[1, 2],[3, 4], 5]
+// myEvesomeArray.flay().map(array => array *10)
+// myEvesomeArray.flatMap(array => array * 10)
+// const myEvesomeArray = ['a','b','c','d','e']
+// myEvesomeArray.every(item => item === 'd')
+// // false
+// const myEvesomeArray = ['d','d','d','d','d']
+// myEvesomeArray.some(item => item === 'd')
+//  // true
+// const myEvesomeArray = [5, 4, 3, 2, 1]
+// myEvesomeArray.map(item => item * 10)
+// //возвращает одинаковое количестов элементов и переумножает каждое число 
+// // const myEvesomeArray = [[1, 2],[3, 4], 5]
+// // myEvesomeArray.flat()
+// // этот метод работает только для одного уровня тоесть то что внутри массива
+
+// const myEvesomeArray = [
+//     {id: 1, name: 'vasya'},
+//     {id: 2, name: 'petya'},
+//     {id: 3, name: 'lesha'},
+//     {id: 4, name: 'vasya'}
+// ]
+// // myEvesomeArray.filter(item => item.name === 'vasya')
+// // console.log(myEvesomeArray)
+// // myEvesomeArray.forEach(item => console.log(item.name))
+// // myEvesomeArray.findIndex(item => item.id === 3)
+// // console.log(myEvesomeArray.findIndex)
+
+// myEvesomeArray.find(item => item.id === 3 )
+// //возвращает всю строку которую искал 
+
+// // sort 
+// const myEvesomeArray = [5,4,3,2,1]
+// myEvesomeArray.sort((a, b) => b - a)
+// console.log(myEvesomeArray.sort())
+// const myEvesomeArray = [1,2,3,4,5]
+// const myEvesomeArray2 = [10,20,30,40,50]
+// myEvesomeArray.concat(myEvesomeArray2)
+// console.log(myEvesomeArray.concat(myEvesomeArray2))
+// const myEvesomeArray = [1,2,3,4,5]
+// myEvesomeArray.includes(3)
+// console.log(myEvesomeArray.includes(3))
+// const myEvesomeArray = ['e','d','c','b','a']
+// myEvesomeArray.reverse()
+// console.log(myEvesomeArray)
+// const myEvesomeArray = [[1],[2],[3],[4],[5]]
+// // myEvesomeArray.flat().map(item => item* 20)
+// // console.log(myEvesomeArray.flat().map(item => item* 20))
+// myEvesomeArray.flatMap(item => item * 10)
+// console.log(myEvesomeArray.flatMap(item => item * 10))
+
+
+
+
+
+//accordion  
+document.querySelectorAll(".item_header").forEach(
+    function(header){
+
+header.addEventListener("click",()=>{
+            if(header.parentNode.classList.contains("active")){
+              header.parentNode.classList.remove("active");
+              header.parentNode.style.height= "54px";
+              
+            }else{
+document.querySelectorAll(".item_header").forEach(
+    function(header2){
+        header2.parentNode.classList.remove("active");
+        header2.parentNode.style.height= "54px"
+    }
+)              
+header.parentNode.classList.add("active");
+
+
+
+
+let altPar=header.nextElementSibling.scrollHeight;
+let altura= altPar+54;
+header.parentNode.style.height= altura + "px";
+                
+            }
+            
+        })
+    }
+);
+
+
+//
