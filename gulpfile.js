@@ -29,7 +29,8 @@ function browsersync() {
     browserSync.init({
         server: {
             baseDir: 'app/'
-        }
+        },
+        notify: false
     });
 }
 
@@ -77,6 +78,8 @@ function watching() {
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
+
+
 
 exports.images = images;
 exports.scripts = scripts;
