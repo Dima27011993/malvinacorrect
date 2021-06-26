@@ -523,7 +523,7 @@ instagramJS.forEach(item => {
 
 
     // $(".faqs-container .faq-singular:first-child").add("active").children(".faq-answer").slideDown();//Remove this line if you dont want the first item to be opened automatically.
-   
+//    $('.faq-container .faq-singular:first-child').add('active').children('.faq-answer').slideDown()
     // $(".faq-question").on("click", function(){
     //   if( $(this).parent().hasClass("active") ){
     //     $(this).next().slideUp();
@@ -575,16 +575,62 @@ instagramJS.forEach(item => {
 //     }
 // })
 
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-answer').slideUp()
+//         $('.faq-singular').removeClass('active')
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-singular').removeClass('active')
+//         $('.faq-answer').slideUp()
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-singular').removeClass('active')
+//         $('.faq-answer').slideUp()
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-answer').slideUp()
+//         $('.faq-singular').removeClass('active')
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
+
 $('.faq-question').on('click',function(){
     if($(this).parent().hasClass('active')){
         $(this).next().slideUp()
     }else{
-        $('.faq-answer').slideUp()
         $('.faq-singular').removeClass('active')
+        $('.faq-answer').slideUp()
         $(this).parent().addClass('active')
         $(this).next().slideDown()
     }
 })
+
 
 
 // // accordion  
