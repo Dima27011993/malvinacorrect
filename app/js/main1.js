@@ -522,39 +522,138 @@ instagramJS.forEach(item => {
 // console.log(myEvesomeArray.flatMap(item => item * 10))
 
 
+    // $(".faqs-container .faq-singular:first-child").add("active").children(".faq-answer").slideDown();//Remove this line if you dont want the first item to be opened automatically.
+   
+    // $(".faq-question").on("click", function(){
+    //   if( $(this).parent().hasClass("active") ){
+    //     $(this).next().slideUp();
+    //     $(this).parent().removeClass("active");
+    //   }
+    //   else{
+    //     $(".faq-answer").slideUp();
+    //     $(".faq-singular").removeClass("active");
+    //     $(this).parent().addClass("active");
+    //     $(this).next().slideDown();
+    //   }
+    // });
+
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//         $(this).parent().removeClass('active')
+//     }else{
+//         $('.faq-answer').slideUp()
+//         $('.faq-singular').removeClass('active')
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
 
 
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-answer').slideUp()
+//         $('.faq-singular').removeClass('active')
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
 
-//accordion  
-document.querySelectorAll(".item_header").forEach(
-    function(header){
+//     }
+// })
 
-header.addEventListener("click",()=>{
-            if(header.parentNode.classList.contains("active")){
-              header.parentNode.classList.remove("active");
-              header.parentNode.style.height= "54px";
-              
-            }else{
-document.querySelectorAll(".item_header").forEach(
-    function(header2){
-        header2.parentNode.classList.remove("active");
-        header2.parentNode.style.height= "54px"
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-answer').slideUp()
+//         $('faq-singular').removeClass('active')
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+
+
+//     }
+// })
+
+$('.faq-question').on('click',function(){
+    if($(this).parent().hasClass('active')){
+        $(this).next().slideUp()
+    }else{
+        $('.faq-answer').slideUp()
+        $('.faq-singular').removeClass('active')
+        $(this).parent().addClass('active')
+        $(this).next().slideDown()
     }
-)              
-header.parentNode.classList.add("active");
+})
 
 
+// // accordion  
+// document.querySelectorAll(".item_header").forEach(
+//     function(header){
+
+// header.addEventListener("click",()=>{
+//             if(header.parentNode.classList.contains("active")){
+//               header.parentNode.classList.remove("active");
+//             //   header.parentNode.style.height= "54px";
+
+//             }else{
+// document.querySelectorAll(".item_header").forEach(
+//     function(header2){
+//         header2.parentNode.classList.remove("active");
+//         // header2.parentNode.style.height= "54px"
+//     })
+    
+// header.parentNode.classList.add("active");
+
+// }
+// })
+// }
+// )
+ 
+ 
 
 
 let altPar=header.nextElementSibling.scrollHeight;
-let altura= altPar+54;
+let altura= altPar+104;
 header.parentNode.style.height= altura + "px";
-                
-            }
-            
-        })
-    }
-);
+      
 
+// document.querySelectorAll('.item_header').forEach(
+//     function(header){
+//         header.addEventListener('click',()=>{
+//             header.parentNode.classList.contains('active')
+//         })
+//     }
+// )
+
+
+// document.querySelectorAll('.item_header').forEach(
+//     function(header){
+
+
+        // header.addEventListener("click",()=>{
+        //     if(header.parentNode.classList.contains('active')){
+        //         header.parentNode.classList.remove('active');
+        //         header.parentNode.style.height = '54px';
+        //     }else{
+        //         document.querySelectorAll('.item_header').forEach(
+        //             function(header){
+        //                 header2.parentNode.classList.remove('active');
+        //                 header2.parentNode.style.height = '54px'
+        //             }
+        //         )
+        //         header.parentNode.classList.add('active');
+//         //     }
+//         // })
+//     }
+// )
+
+
+          
+//             }
+//         })
+//     }
+// );
 
 //
+
