@@ -257,6 +257,33 @@ instagramJS.forEach(item => {
     `)
 });
 
+// questionJS = [
+//     {
+// name:'What is the return policy?'
+//     },
+//     {
+// name:'What is the return policy?'
+//     },
+//     {
+// name:'How long does it take to process a refund?'
+//     },
+//     {
+// name:'What is the policy for late/non-delivery of items ordered online?'
+//     },
+//     {
+// name:'Is the product same as shown in pictures?'
+//     }
+// ];
+// questionJS.forEach(item => {
+//     $('.faq-singular').append(`
+//     <h2 class="faq-question" itemprop="name">${item.name}</h2>
+//     <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+//       <div itemprop="text">
+//         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+//       </div>
+//     </div>
+//     `)
+// })
 
 
 
@@ -620,6 +647,28 @@ instagramJS.forEach(item => {
 // })
 
 
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-singular').removeClass('active')
+//         $('.faq-answer').slideUp()
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
+// $('.faq-question').on('click',function(){
+//     if($(this).parent().hasClass('active')){
+//         $(this).next().slideUp()
+//     }else{
+//         $('.faq-singular').removeClass('active')
+//         $('.faq-answer').slideUp()
+//         $(this).parent().addClass('active')
+//         $(this).next().slideDown()
+//     }
+// })
+
 $('.faq-question').on('click',function(){
     if($(this).parent().hasClass('active')){
         $(this).next().slideUp()
@@ -635,7 +684,7 @@ $('.faq-question').on('click',function(){
 
 // // accordion  
 // document.querySelectorAll(".item_header").forEach(
-//     function(header){
+//     function(header){ 
 
 // header.addEventListener("click",()=>{
 //             if(header.parentNode.classList.contains("active")){
