@@ -2,10 +2,14 @@ section#constraints{
 .block__text__photo_navigation {
 
 .wrapper__home {
+    justify-content: space-between;
+    
 .left__wrapper__home {
-.content__left__wrapper__home {
-    margin: 0 0 58px 0;
+    
+.content__left__wrapper__home{
 display: flex;
+margin-top: 15px;
+
 
 .vector__constraints{
     width: 54px;
@@ -40,9 +44,12 @@ margin-top: 15px;
 
 
 .right__wrapper__home {
+    
 .content__right__wrapper__home {
-    width: 608px;
     height: 507px;
+    img{
+        
+    }
 .navigation {
 .counter {
 }

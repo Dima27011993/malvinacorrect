@@ -641,7 +641,6 @@ img.blur__left{
                 width: 100%;
         
                 .left__wrapper__home{
-                    width: 50%;
         
                 .content__left__wrapper__home{
         
@@ -700,7 +699,7 @@ img.blur__left{
         
             .right__wrapper__home{
         
-        .content__right__wrapper__home{
+        .content__right__wrapper__home:nth-child(1){
             position: relative;
             height: 100%;
             width: 100%;
