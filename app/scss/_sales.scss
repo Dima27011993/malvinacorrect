@@ -11,7 +11,6 @@ section#sales{
 img{
 
 }
-}
 .sale {
     right: 16px;
     top: 16px;
@@ -22,7 +21,35 @@ span.percent {
 }
 }
 
+.text__sales{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 
+
+    p.p18_32{
+
+    }
+    .span{
+        span.new{
+            
+        }
+        span.old{
+
+        }
+    }
+}
+
+}
+
+
+}
+.text__sales::before{
+position: absolute;
+bottom: 40px;
+left: 41px;
+content: '';
+display: block;
 }
 .content__right__wrapper__home::before {
 position: absolute;

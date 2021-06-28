@@ -66,7 +66,7 @@ overflow: hidden;
 }
 }
 
-.content__right__wrapper__home::before{
+.images__abonements__block::before{
     display: block;
     content: '';
     position: absolute;
@@ -77,7 +77,6 @@ overflow: hidden;
 background: linear-gradient(0deg, rgba(41, 46, 57, 0.4), rgba(41, 46, 57, 0.4));
 
     img{
-        position: relative;
     }
 }
 
