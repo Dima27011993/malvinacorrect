@@ -8,6 +8,7 @@ section#constraints{
     
 .content__left__wrapper__home{
 display: flex;
+flex-wrap: wrap;
 margin-top: 15px;
 
 
@@ -36,7 +37,6 @@ margin-top: 15px;
 }
 .p16_28 {
     width: 409px;
-    margin-bottom: 58px;
 }
 }
 }
@@ -47,6 +47,7 @@ margin-top: 15px;
     
 .content__right__wrapper__home {
     height: 507px;
+    
     img{
         
     }
