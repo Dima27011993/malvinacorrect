@@ -192,16 +192,42 @@ instagramJS.forEach((item) => {
     `);
 });
 
-$(".faq-question").on("click", function () {
-  if ($(this).parent().hasClass("active")) {
-    $(this).next().slideUp();
-  } else {
-    $(".faq-singular").removeClass("active");
-    $(".faq-answer").slideUp();
-    $(this).parent().addClass("active");
-    $(this).next().slideDown();
-  }
-});
+  // $(".faqs-container .faq-singular:first-child").addClass("active").children(".faq-answer").slideDown();//Remove this line if you dont want the first item to be opened automatically.
+//   $(".faq-question").on("click", function(){
+//     if( $(this).parent().hasClass("active") ){
+//       $(this).next().slideUp();
+// $(this).parent().removeClass('active')
+//     }
+//     else{
+//       $(".faq-answer").slideUp();
+//       $(".faq-singular").removeClass("active");
+//       $(this).parent().addClass("active");
+//       $(this).next().slideDown();
+//     }
+//   });
+// $('.faq-question').on('click',function(){
+//   if($(this).parent().hasClass('active')){
+//     $(this).next().slideUp();
+//     $(this).parent().removeClass('active')
+//   }else{
+//     $('.faq-singular').removeClass('active');
+//     $('.faq-answer').slideUp();
+//     $(this).parent().addClass('active');
+//     $(this).next().slideDown()
+//   }
+// })
+
+$('.faq-question').on('click',function(){
+if($(this).parent().hasClass('active')){
+  $(this).next().slideUp();
+  $(this).parent().removeClass('active')
+}else{
+  $('.faq-singular').removeClass('active');
+  $('.faq-answer').slideUp()
+  $(this).parent().addClass('active')
+  $(this).next().slideDown()
+}
+})
 
 const salesJS = [
   {
@@ -294,14 +320,14 @@ const salesJS = [
   }
 ];
 
-const upPrice = (number)=>{
-if(number){
-   const withPercent = (number/ 100 * 10) + number 
-   return withPercent
+const upPrice = (number) => {
+  if(number) { 
+    const withPercent = (number / 100 * 10) + number
+    return withPercent
+  }
+  return 0
 }
-return 0
-}
-
+ 
 
 salesJS.forEach((item) => {
     const itemHtml = `
@@ -325,3 +351,4 @@ salesJS.forEach((item) => {
 
     $('.saleWrapper').append(itemHtml)
 });
+
