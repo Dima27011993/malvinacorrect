@@ -192,145 +192,153 @@ instagramJS.forEach((item) => {
     `);
 });
 
-  // $(".faqs-container .faq-singular:first-child").addClass("active").children(".faq-answer").slideDown();//Remove this line if you dont want the first item to be opened automatically.
-//   $(".faq-question").on("click", function(){
-//     if( $(this).parent().hasClass("active") ){
-//       $(this).next().slideUp();
-// $(this).parent().removeClass('active')
-//     }
-//     else{
-//       $(".faq-answer").slideUp();
-//       $(".faq-singular").removeClass("active");
-//       $(this).parent().addClass("active");
-//       $(this).next().slideDown();
-//     }
-//   });
-// $('.faq-question').on('click',function(){
-//   if($(this).parent().hasClass('active')){
-//     $(this).next().slideUp();
-//     $(this).parent().removeClass('active')
-//   }else{
-//     $('.faq-singular').removeClass('active');
-//     $('.faq-answer').slideUp();
-//     $(this).parent().addClass('active');
-//     $(this).next().slideDown()
-//   }
-// })
-
-$('.faq-question').on('click',function(){
-if($(this).parent().hasClass('active')){
-  $(this).next().slideUp();
-  $(this).parent().removeClass('active')
-}else{
-  $('.faq-singular').removeClass('active');
-  $('.faq-answer').slideUp()
-  $(this).parent().addClass('active')
-  $(this).next().slideDown()
-}
-})
+$(".faq-question").on("click", function () {
+  if ($(this).parent().hasClass("active")) {
+    $(this).parent().removeClass("active");
+    $(this).next().slideUp();
+  } else {
+    $(".faq-singular").removeClass("active");
+    $(".faq-answer").slideUp();
+    $(this).parent().addClass("active");
+    $(this).next().slideDown();
+  }
+});
 
 const salesJS = [
   {
     image: "images/sales/1.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Верхняя губа',
+    percent: "-40%",
+    name: "Верхняя губа",
     price: 500,
-    oldPrice: 1000
+    oldPrice: 1000,
   },
   {
     image: "images/sales/2.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Подмышечные впадины',
+    percent: "-40%",
+    name: "Подмышечные впадины",
     price: 1000,
-    oldPrice: 1500
+    oldPrice: 1500,
   },
   {
     image: "images/sales/3.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Зона бикини и подмышечных впадин',
+    percent: "-40%",
+    name: "Зона бикини и подмышечных впадин",
     price: 2500,
-    oldPrice: 4000
+    oldPrice: 4000,
   },
   {
     image: "images/sales/4.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Лицо',
+    percent: "-40%",
+    name: "Лицо",
     price: 3000,
-    oldPrice: 5500
+    oldPrice: 5500,
   },
   {
     image: "images/sales/5.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Ноги и подмышечные впадины',
+    percent: "-40%",
+    name: "Ноги и подмышечные впадины",
     price: 4000,
-    oldPrice: 6500
+    oldPrice: 6500,
   },
   {
     image: "images/sales/6.jpg",
     date: "до 13 Января",
-    percent: '-40%',
+    percent: "-40%",
     name: 'Комплекс "Malvina"',
     price: 4000,
-    oldPrice: 7000
+    oldPrice: 7000,
   },
   {
     image: "images/sales/7.jpg",
     date: "до 13 Января",
-    percent: '-40%',
-    name: 'Ноги и зона бикини',
+    percent: "-40%",
+    name: "Ноги и зона бикини",
     price: 4500,
-    oldPrice: 8000
+    oldPrice: 8000,
   },
   {
     image: "images/sales/8.jpg",
     date: "до 13 Января",
-    percent: '-40%',
+    percent: "-40%",
     name: 'Комплекс "Лайт"',
     price: 5000,
-    oldPrice: 10000
+    oldPrice: 10000,
   },
   {
     image: "images/sales/9.jpg",
     date: "до 13 Января",
-    percent: '-40%',
+    percent: "-40%",
     name: 'Комплекс "New"',
     price: 5500,
-    oldPrice: 10000
+    oldPrice: 10000,
   },
   {
     image: "images/sales/10.jpg",
     date: "до 13 Января",
-    percent: '-40%',
+    percent: "-40%",
     name: 'Комплекс "Медиум"',
     price: 8000,
-    oldPrice: 13500
+    oldPrice: 13500,
   },
   {
     image: "images/sales/11.jpg",
     date: "до 13 Января",
-    percent: '-40%',
+    percent: "-40%",
     name: 'Комплекс "Премиум"',
     price: 12500,
-    oldPrice: 31000
-  }
+    oldPrice: 31000,
+  },
 ];
 
 const upPrice = (number) => {
-  if(number) { 
-    const withPercent = (number / 100 * 10) + number
-    return withPercent
+  if (number) {
+    const withPercent = (number / 100) * 10 + number;
+    return withPercent;
   }
-  return 0
-}
- 
+  return 0;
+};
+
+//!!!!!!!!! поторение материала 
+const test = [
+  "Dima",
+  33,
+  {
+    ford: "blue",
+    lastName: [
+      "vasya",
+      44,
+      {
+        red: "yellow",
+        go: (name) => {
+          return name + 10;
+        },
+      },
+    ],
+  },
+  () => {
+    return "hy";
+  },
+  55,
+];
+
+/*
+test[2].lastName
+(3) ["vasya", 44, {…}]0: "vasya"1: 442: {red: "yellow", go: ƒ}length: 3__proto__: Array(0)
+test[2].lastName[2]
+{red: "yellow", go: ƒ}
+test[2].lastName[2].go
+e=>e+10
+test[2].lastName[2].red
+"yellow"
+*/
 
 salesJS.forEach((item) => {
-    const itemHtml = `
+  const itemHtml = `
     <div class="content__right__wrapper__home">
     <img src="${item.image}" alt="">
     <div class="sale">
@@ -349,6 +357,5 @@ salesJS.forEach((item) => {
 </div>
     `;
 
-    $('.saleWrapper').append(itemHtml)
+  $(".saleWrapper").append(itemHtml);
 });
-
