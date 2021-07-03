@@ -326,6 +326,75 @@ const test = [
   55,
 ];
 
+const test2 = [
+'Dima',
+28,
+{
+  cars: 'subaru', 
+  wife: 'lilya',
+  children : 3,
+  house: 'one house  and country house',
+  go: (name) =>{
+    return name + 20
+  }
+}
+]
+const itsBig = 'это много'
+
+const computer = [
+
+  'keywords',
+  'display',
+  123232534646,
+  {
+    mouse: 1,
+    alphabet : '32 words',
+    powerOf: 1,
+
+
+  }, 
+  {
+love: (number)=>{
+  return number + number + number 
+},
+wife: (item) =>{
+  return item + ' Love' + ' Dima'
+}
+  }
+]
+
+const myName = [
+
+  {
+  name: 'Dmitriy',
+  lastName: 'Shevchenko',
+  age: 28,
+  wife: 'dont have',
+  children: 'dont have',
+  job : 'programmer',
+  time: (time)=> {
+    return time * 0.5 + ' glad too see you and good luck'
+  }
+}
+]
+
+const myTest = [
+  1,
+  2,
+  4,
+  'hello',
+  
+  {
+   name1: (number)=>{
+     return (number / 100 * 5 )+ number
+   },
+   name: 'vasya',
+   love: 'lilya'
+  }
+]
+
+
+
 /*
 test[2].lastName
 (3) ["vasya", 44, {…}]0: "vasya"1: 442: {red: "yellow", go: ƒ}length: 3__proto__: Array(0)

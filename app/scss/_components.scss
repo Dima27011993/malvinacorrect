@@ -350,9 +350,6 @@ img.blur__left{
 
      // компоненты классов
 
-     section#about_image{
-        position: relative;
-        margin-top: 32px;
         
         .wrapper__home{
             display: flex;
@@ -456,9 +453,42 @@ img.blur__left{
             }
         }
     }
+
+//описание и фото справа
+.block__text__photo_navigation {
+
+    .wrapper__home {
+        display: flex;
+        justify-content: space-between;
+        
+    .left__wrapper__home {
+    .content__left__wrapper__home {
+        width: 360px;
+        height: 112px;
+    
+    .h20_32 {
     }
-
-
+    .p16_28 {
+    }
+    
+    }
+    }
+    
+    
+    .right__wrapper__home {
+    .content__right__wrapper__home {
+        img{
+        }
+    }
+    }
+    
+    }
+    
+    
+    
+    .blur__left {
+    }
+    }
 
 
 
