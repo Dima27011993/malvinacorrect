@@ -170,6 +170,27 @@ text-transform: uppercase;
 color: #787E90;
     }
 }
+button.button_S_b{
+    padding: 15px 24px;
+    width: max-content;
+    border-radius: 2px;
+    border: none;
+    box-sizing: border-box;
+    background: none;
+
+    a{
+        text-decoration: none;
+        font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #787E90;
+    }
+}
 
 button.sale_xs{
     background: #DB0A5B;
@@ -493,6 +514,10 @@ img.blur__left{
 
 
 
+    .wrapper__home{
+        display: flex;
+        justify-content: space-between;
+    }
     /////
     section#popup_comp{
         margin-top: 35px;
@@ -854,3 +879,72 @@ img{
     }
         
                   
+////////////////
+.epilation__text {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEDF6;
+    margin-top: 40px;
+    box-sizing: border-box;
+
+
+.text__left {
+    width: 50%;
+
+.p13_24 {
+    color: #787E90;
+
+}
+}
+
+.text__right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    p.p13_24{
+        color: #787E90;
+    }
+}
+.find{
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    width: 181px;
+    height: 40px;
+    margin-bottom: 12px;
+
+img{
+width: 12px;
+height: 12px;
+box-sizing: border-box;
+margin-left: 12px;
+
+}
+
+input{
+width: 100%;
+height: 100%;
+background-color: #F8F9FA;
+border: none;
+
+
+}
+
+input::placeholder{
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #AEB2BE;
+background-image: url(../images/epilation/find.svg);
+background-position:left;
+background-repeat: no-repeat;
+}
+
+
+}
+}
