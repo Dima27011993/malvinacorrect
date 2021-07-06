@@ -22,6 +22,15 @@ text-transform: uppercase;
 color: #292E39;
 }
 
+p.p13_24_S{
+    font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 24px;
+text-transform: uppercase;
+color: #787E90;
+}
+
 p.p14_24xs{
     font-style: normal;
 font-weight: normal;
@@ -31,7 +40,7 @@ color: #787E90;
 }
 
 p.p16_28b{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -880,6 +889,7 @@ img{
     border-bottom: 1px solid #EAEDF6;
     margin-top: 40px;
     box-sizing: border-box;
+    align-items: center;
 
 
 .text__left {

@@ -2,28 +2,48 @@ section.contacts {
 .contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    
 
 .content__left_contacts {
-    width: 403px;
+    width: 386px;
     max-width: 100%;
 
 }
 .header__contacts {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
 
 .h20_32 {
 }
-
-}
-
-.p16_28 {
-}
-.content__right_contacts {
-    margin-right: 32px;
-    width: 24.5%;
+p.p13_24S{
 
 }
 .p13_24 {
+    margin-right: 4px;
 }
+}
+
+.p16_28 {
+    margin: 0;
+}
+.content__right_contacts {
+width: 275px;
+
+}
+
+}
+
+.map__contacts{
+    margin-top: 60px;
+width: 100%;
+height: 100%;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 }
