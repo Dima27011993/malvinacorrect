@@ -303,7 +303,7 @@ const upPrice = (number) => {
   return 0;
 };
 
-//!!!!!!!!! поторение материала 
+//!!!!!!!!! поторение материала
 const test = [
   "Dima",
   33,
@@ -327,73 +327,67 @@ const test = [
 ];
 
 const test2 = [
-'Dima',
-28,
-{
-  cars: 'subaru', 
-  wife: 'lilya',
-  children : 3,
-  house: 'one house  and country house',
-  go: (name) =>{
-    return name + 20
-  }
-}
-]
-const itsBig = 'это много'
+  "Dima",
+  28,
+  {
+    cars: "subaru",
+    wife: "lilya",
+    children: 3,
+    house: "one house  and country house",
+    go: (name) => {
+      return name + 20;
+    },
+  },
+];
+const itsBig = "это много";
 
 const computer = [
-
-  'keywords',
-  'display',
+  "keywords",
+  "display",
   123232534646,
   {
     mouse: 1,
-    alphabet : '32 words',
+    alphabet: "32 words",
     powerOf: 1,
-
-
-  }, 
+  },
   {
-love: (number)=>{
-  return number + number + number 
-},
-wife: (item) =>{
-  return item + ' Love' + ' Dima'
-}
-  }
-]
+    love: (number) => {
+      return number + number + number;
+    },
+    wife: (item) => {
+      return item + " Love" + " Dima";
+    },
+  },
+];
 
 const myName = [
-
   {
-  name: 'Dmitriy',
-  lastName: 'Shevchenko',
-  age: 28,
-  wife: 'dont have',
-  children: 'dont have',
-  job : 'programmer',
-  time: (time)=> {
-    return time * 0.5 + ' glad too see you and good luck'
-  }
-}
-]
+    name: "Dmitriy",
+    lastName: "Shevchenko",
+    age: 28,
+    wife: "dont have",
+    children: "dont have",
+    job: "programmer",
+    time: (time) => {
+      return time * 0.5 + " glad too see you and good luck";
+    },
+  },
+];
 
 const myTest = [
   1,
   2,
   4,
-  'hello',
-  
+  "hello",
+
   {
-   name1: (number)=>{
-     return (number / 100 * 5 )+ number
-   },
-   name: 'vasya',
-   love: 'lilya'
-  }
-]
-
-
+    name1: (number) => {
+      return (number / 100) * 5 + number;
+    },
+    name: "vasya",
+    love: "lilya",
+  },
+];
 
 /*
 test[2].lastName
@@ -428,3 +422,87 @@ salesJS.forEach((item) => {
 
   $(".saleWrapper").append(itemHtml);
 });
+
+// создать массив чисел
+// получить новый массив в котором все числа будут выше на 15 %
+
+//но если одно из чисел равна 120 или 222 вместо них
+//записать 1000
+const num = [1, 222, 6, 446, 5, 768, 79, 87, 94, 120];
+
+const num1 = num.map((item) => {
+  const withPercent = (item / 100) * 15 + item;
+  if (item === 120 || item === 222) {
+    return 1000;
+  }
+  return withPercent;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const wordsBase = [
+  'aaa','www','ccc'
+]
+
+const fff = 'ggff ddd ccc dddss www hello world aaa';
+ 
+const together = fff.split(' ')
+
+const  newArray = together.map(word =>{
+  const isFind = wordsBase.find(item => item === word)
+  if(isFind){
+    return '***'
+  }
+  return word
+})
+
+const sss = newArray.toString()
+
+
+
+
+
+const array = [
+  'wwww','ggg', 'qqq'
+]
+
+const onlyWords = 'ggg qqq wwwwwwwww qqq aaa fff sss'
+ 
+const together11 = onlyWords.split(' ')
+
+const newArrayWorkWithMAssive = together11.map(words => {
+ const isFind2 = array.find(item => item === words)
+ if(isFind2){
+   return '**************'
+ }
+ return words
+})
+
+
+
