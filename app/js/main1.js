@@ -303,7 +303,7 @@ const upPrice = (number) => {
   return 0;
 };
 
-//!!!!!!!!! поторение материала
+//!!!!!!!!! повторение материала
 const test = [
   "Dima",
   33,
@@ -439,70 +439,108 @@ const num1 = num.map((item) => {
 });
 
 
+const wordsBase = ["aaa", "www", "ccc"];
 
+const fff = "ggff ddd ccc dddss www hello world aaa";
 
+const together = fff.split(" ");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const wordsBase = [
-  'aaa','www','ccc'
-]
-
-const fff = 'ggff ddd ccc dddss www hello world aaa';
- 
-const together = fff.split(' ')
-
-const  newArray = together.map(word =>{
-  const isFind = wordsBase.find(item => item === word)
-  if(isFind){
-    return '***'
+const newArray = together.map((word) => {
+  const isFind = wordsBase.find((item) => item === word);
+  if (isFind) {
+    return "***";
   }
-  return word
-})
-
-const sss = newArray.toString()
+  return word;
+});
 
 
+const sss = newArray.join(", ").toString();
 
-
-
-const array = [
-  'wwww','ggg', 'qqq'
-]
-
-const onlyWords = 'ggg qqq wwwwwwwww qqq aaa fff sss'
  
-const together11 = onlyWords.split(' ')
 
-const newArrayWorkWithMAssive = together11.map(words => {
- const isFind2 = array.find(item => item === words)
- if(isFind2){
-   return '**************'
- }
- return words
-})
+const getCarInfo = (car, country) => {
+  if (country === "EU" && car.region === "EU") {
+    return `Name: ${car.name}, power: ${car.hp}hp, speed: ${car.maxSpeed}km/h`;
+  }
+
+  if(country === "US" && car.region ==="EU"){
+    return `Name: ${car.name}, power: ${car.hp * 0.74}kw, speed: ${car.maxSpeed * 0.62}ml/h`;
+
+  }
 
 
+  if(car.region === 'FR' && country ){
+    return "французов не обслуживаем"
+  }
+
+  if(country === 'JP'){
+    return "произведенов Японии"
+  }
+
+  if(country === 100){
+    return  car.hp + 100 
+  }
+
+  return "не верные данные"
+
+  
+};
+
+
+
+
+
+///дз 
+// километры в мили и хорс повер в киловаты 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const array55 = ["hello", "hy", "see"];
+
+const notAarray55 = "hello my name is see and say hy";
+
+const wrapperNotAarray = notAarray55.split(" ");
+
+const newArrayofThis = wrapperNotAarray.map((word) => {
+  const ifFindthis = array55.find((item) => item === word);
+  if (ifFindthis) {
+    return "***";
+  }
+  return word;
+});
+
+
+
+const course = {
+  usd: 27.32,
+  eur: 32.4,
+  rub: 0.36,
+  zl: 7.05
+}
+
+
+const getCurrency = (grivna)=>{
+const changeDollar=grivna/course.usd
+const changeEuro=grivna/course.eur
+const changeRub=grivna/course.rub
+const changeZl=grivna/course.zl
+return `на текущий момент ${grivna} гривен равно ${changeDollar.toFixed(2)} долларов,
+${changeEuro.toFixed(2)} евро,
+${changeRub.toFixed(2)} рублей,
+${changeZl.toFixed(2)} злотых`
+}
+
+
+
+// до двух значений 
 
