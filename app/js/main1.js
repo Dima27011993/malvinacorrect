@@ -428,6 +428,7 @@ salesJS.forEach((item) => {
 
 //но если одно из чисел равна 120 или 222 вместо них
 //записать 1000
+
 const num = [1, 222, 6, 446, 5, 768, 79, 87, 94, 120];
 
 const num1 = num.map((item) => {
@@ -438,6 +439,15 @@ const num1 = num.map((item) => {
   return withPercent;
 });
 
+//
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const number11 = number.map((item) => {
+  const withPercent = (item / 100) * 15 + item;
+  if (item === 1 || item === 2) {
+    return 1000;
+  }
+  return withPercent;
+});
 
 const wordsBase = ["aaa", "www", "ccc"];
 
@@ -453,51 +463,36 @@ const newArray = together.map((word) => {
   return word;
 });
 
-
 const sss = newArray.join(", ").toString();
-
- 
 
 const getCarInfo = (car, country) => {
   if (country === "EU" && car.region === "EU") {
     return `Name: ${car.name}, power: ${car.hp}hp, speed: ${car.maxSpeed}km/h`;
   }
 
-  if(country === "US" && car.region ==="EU"){
-    return `Name: ${car.name}, power: ${car.hp * 0.74}kw, speed: ${car.maxSpeed * 0.62}ml/h`;
-
+  if (country === "US" && car.region === "EU") {
+    return `Name: ${car.name}, power: ${car.hp * 0.74}kw, speed: ${
+      car.maxSpeed * 0.62
+    }ml/h`;
   }
 
-
-  if(car.region === 'FR' && country ){
-    return "французов не обслуживаем"
+  if (car.region === "FR" && country) {
+    return "французов не обслуживаем";
   }
 
-  if(country === 'JP'){
-    return "произведенов Японии"
+  if (country === "JP") {
+    return "произведенов Японии";
   }
 
-  if(country === 100){
-    return  car.hp + 100 
+  if (country === 100) {
+    return car.hp + 100;
   }
 
-  return "не верные данные"
-
-  
+  return "не верные данные";
 };
 
-
-
-
-
-///дз 
-// километры в мили и хорс повер в киловаты 
-
-
-
-
-
-
+///дз
+// километры в мили и хорс повер в киловаты
 
 const array55 = ["hello", "hy", "see"];
 
@@ -513,28 +508,44 @@ const newArrayofThis = wrapperNotAarray.map((word) => {
   return word;
 });
 
+const course11 = {
+  usd: 27.4,
+  eur: 32.7,
+};
 
+const getCurrency11 = (grivna) => {
+  const changeDollar = grivna / course.usd;
+  const changeEuro = grivna / course.eur;
+  return `${grivna.toFixed(2)} гривен равняется ${changeDollar.toFixed(
+    2
+  )}долларов,${changeEuro.toFixed(2)} евро`;
+};
 
 const course = {
   usd: 27.32,
   eur: 32.4,
   rub: 0.36,
-  zl: 7.05
-}
+  zl: 7.05,
+};
 
-
-const getCurrency = (grivna)=>{
-const changeDollar=grivna/course.usd
-const changeEuro=grivna/course.eur
-const changeRub=grivna/course.rub
-const changeZl=grivna/course.zl
-return `на текущий момент ${grivna} гривен равно ${changeDollar.toFixed(2)} долларов,
+const getCurrency = (grivna) => {
+  const changeDollar = grivna / course.usd;
+  const changeEuro = grivna / course.eur;
+  const changeRub = grivna / course.rub;
+  const changeZl = grivna / course.zl;
+  return `на текущий момент ${grivna} гривен равно ${changeDollar.toFixed(
+    2
+  )} долларов,
 ${changeEuro.toFixed(2)} евро,
 ${changeRub.toFixed(2)} рублей,
-${changeZl.toFixed(2)} злотых`
-}
+${changeZl.toFixed(2)} злотых`;
+};
 
+// до двух значений
 
+//дана строка сделайте заглавным первый символ не используя цикл
+//нvar str = 'hello';
 
-// до двух значений 
-
+// var str = '123456'
+// var result = str.split('').reverse().join('')
+// alert(result)
