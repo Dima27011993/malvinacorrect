@@ -499,12 +499,6 @@ const getCarInfo = (car, country) => {
 
 
 
-
-
-
-
-
-
 const array55 = ["hello", "hy", "see"];
 
 const notAarray55 = "hello my name is see and say hy";
