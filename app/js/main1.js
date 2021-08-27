@@ -439,7 +439,6 @@ const num1 = num.map((item) => {
   return withPercent;
 });
 
-//
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const number11 = number.map((item) => {
   const withPercent = (item / 100) * 15 + item;
